@@ -5,7 +5,7 @@
 const char* ssid     = "Tejaswi";
 const char* password = "12345678";
 
-const char* host = "34.214.192.111";
+const char* host = "34.213.117.187";
 
 
 const int buttonPin = D2; 
