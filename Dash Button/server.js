@@ -27,8 +27,8 @@ var transporter = nodemailer.createTransport({
 });
 
 const mailOptions = {
-  from: 'luisalbertocanchola@gmail.com', // sender address
-  to: 'luiscnchl@gmail.com', // list of receivers
+  from: 'luiscnchl@gmail.com', // sender address
+  to: 'lcanchol@asu.edu', // list of receivers
   subject: 'Assignment 3 Email', // Subject line
   html: '<p>Your button works</p>'// plain text body
 };
