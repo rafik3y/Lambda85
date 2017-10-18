@@ -13,3 +13,29 @@ var callback = function (req, res) { // req -> request object; res -> response o
 var server = http.createServer(callback) // create an http server
 server.listen(1234, "127.0.0.1"); // make server listen to port 1234
 console.log("Server running at: "+ "http://127.0.0.1:1234");
+
+
+
+var nodemailer = require('nodemailer');
+
+var transporter = nodemailer.createTransport({
+ service: 'gmail',
+ auth: {
+        user: 'luiscnchl@gmail.com',
+        pass: 'hottes09'
+    }
+});
+
+const mailOptions = {
+  from: 'luisalbertocanchola@gmail.com', // sender address
+  to: 'luiscnchl@gmail.com', // list of receivers
+  subject: 'Assignment 3 Email', // Subject line
+  html: '<p>Your button works</p>'// plain text body
+};
+
+transporter.sendMail(mailOptions, function (err, info) {
+   if(err)
+     console.log(err)
+   else
+     console.log(info);
+});
