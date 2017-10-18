@@ -2,10 +2,10 @@
 
 #include <ESP8266WiFi.h>
 
-const char* ssid     = "asu";
-const char* password = "Hottes17!!";
+const char* ssid     = "Tejaswi";
+const char* password = "12345678";
 
-const char* host = "34.214.4.163";
+const char* host = "35.161.225.24";
 
 
 const int buttonPin = D2; 
@@ -101,4 +101,5 @@ void loop() {
  
   */
 }
+
 
